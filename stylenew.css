@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-style: inherit;
+    background-attachment: fixed;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+nav {
+    background-color: rgb(49, 46, 46);
+    display: flex;
+}
+
+nav a {
+    font-weight: 5px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+section {
+    text-align: center;
+    height: 100%;
+    min-height: 40vh;
+    padding: 30px 0px;
+}
+
+section:nth-child(even) {
+    background-color: #ececec;
+}
+
+h2 span {
+    font-size: 25px;
+}
+
+h2 {
+    padding-bottom: 30px;
+}
+
+img {
+    padding-right: 10px;
+}
+
+.img_responsive {
+    max-height: 100vh;
+    width: 100vh;
+}
+
+footer {
+    background-color: rgb(49, 46, 46);
+    ;
+    overflow: hidden;
+}
+
+footer a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    float: left;
+    font-size: 12px;
+}
+
+footer a:hover {
+    background-color: white;
+    color: black;
+}
+
+.copyright {
+    float: right;
+}
+
+.login {
+    margin-left: auto;
+}
+
+.creator {
+    border-radius: 50%;
+    padding: 5px;
+}
+
+h3 {
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+section h2 span {
+    background-color: rgb(163, 163, 20);
+    padding: 13px 18px;
+    border-radius: 20px;
+    color: white;
+}
+
+.carousel {
+    background: #EEE;
+}
+
+.carousel-cell {
+    width: 66%;
+    height: 400px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.info_section {
+    box-shadow: cyan;
+    background-image: url(./giphy.gif);
+    height: 2%;
+    width: 100%;
+}
+
+.head {
+    color: white;
+    margin-top: 1%;
+    margin-left: 35%;
+    margin-right: 37%;
+}
+
+.avatar {
+    margin-top: 0%;
+    position: relative;
+    width: 15%;
+    height: auto;
+    border-radius: 80%;
+    margin-left: 42%;
+    margin-right: 40%;
+}
+
+.searchbox {
+    margin-top: 5%;
+    margin-bottom: 15%;
+    padding: 20px 100px;
+    border-radius: 20px;
+    font-size: bold;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.search_btn {
+    background-color: green;
+    color: honeydew;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+@media screen and ( max-width: 600px) {
+    nav {
+        flex-direction: column;
+        padding: 5px 0px;
+    }
+    .login {
+        margin-left: 0;
+    }
+    footer {
+        flex-direction: column;
+        padding: 5px 0px;
+    }
+    .owner {
+        font-size: 15px;
+    }
+    .owner_bio {
+        font-size: 10px;
+    }
+    .offer {
+        font-size: 15px;
+    }
+    .heading {
+        font-size: 20px;
+    }
+    .avatar {
+        width: 30%;
+        height: auto;
+        position: relative;
+        margin-left: 40%;
+    }
+    .searchbox {
+        margin-top: 0%;
+        margin-bottom: 10%;
+        border-radius: 20px;
+        height: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    section {
+        text-align: center;
+        height: 20%;
+        min-height: 20vh;
+        padding: 60px 0px;
+    }
+    .info_section {
+        box-shadow: cyan;
+        background-image: url(./giphy.gif);
+        height: auto;
+        width: auto;
+    }
+    .head {
+        color: white;
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .img_responsive {
+        max-height: 100%;
+        width: 100%;
+    }
+}
+
+section h2 span {
+    background-color: rgb(163, 163, 20);
+    padding: 13px 18px;
+    border-radius: 20px;
+    color: white;
+}

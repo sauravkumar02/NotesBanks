@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> NOTES BANK | HOME</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-192x192.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            list-style: none;
+        }
+        
+        body {
+            margin: 0px;
+        }
+        
+        header {
+            padding: 10px;
+            background-color: black;
+            text-align: center;
+            color: white;
+            font-style: inherit;
+            background-attachment: fixed;
+        }
+        
+        header h1 {
+            font-size: 50px;
+        }
+        
+        nav {
+            background-color: rgb(49, 46, 46);
+            display: flex;
+        }
+        
+        nav a {
+            font-weight: 5px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 15px;
+        }
+        
+        nav a:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        section {
+            text-align: center;
+            height: 100%;
+            min-height: 40vh;
+            padding: 30px 0px;
+        }
+        
+        section:nth-child(even) {
+            background-color: #ececec;
+        }
+        
+        h2 span {
+            font-size: 25px;
+        }
+        
+        h2 {
+            padding-bottom: 30px;
+        }
+        
+        img {
+            padding-right: 10px;
+        }
+        
+        .img_responsive {
+            max-height: 100vh;
+            width: 100vh;
+        }
+        
+        footer {
+            background-color: rgb(49, 46, 46);
+            ;
+            overflow: hidden;
+        }
+        
+        footer a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            float: left;
+            font-size: 12px;
+        }
+        
+        footer a:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        .copyright {
+            float: right;
+        }
+        
+        .login {
+            margin-left: auto;
+        }
+        
+        .creator {
+            border-radius: 50%;
+            padding: 5px;
+        }
+        
+        h3 {
+            font-size: 2em;
+            letter-spacing: 3px;
+        }
+        
+        section h2 span {
+            background-color: rgb(163, 163, 20);
+            padding: 13px 18px;
+            border-radius: 20px;
+            color: white;
+        }
+        
+        .carousel {
+            background: #EEE;
+        }
+        
+        .carousel-cell {
+            width: 66%;
+            height: 400px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        
+        .info_section {
+            box-shadow: cyan;
+            background-image: url(./giphy.gif);
+            height: 2%;
+            width: 100%;
+        }
+        
+        .head {
+            color: white;
+            margin-top: 1%;
+            margin-left: 35%;
+            margin-right: 37%;
+        }
+        
+        .avatar {
+            margin-top: 0%;
+            position: relative;
+            width: 15%;
+            height: auto;
+            border-radius: 80%;
+            margin-left: 42%;
+            margin-right: 40%;
+        }
+        
+        .searchbox {
+            margin-top: 5%;
+            margin-bottom: 15%;
+            padding: 20px 100px;
+            border-radius: 20px;
+            font-size: bold;
+            height: 50px;
+            margin-left: 5%;
+        }
+        
+        .search_btn {
+            background-color: green;
+            color: honeydew;
+            font-size: 15px;
+            padding: 8px 10px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        
+        @media screen and ( max-width: 600px) {
+            nav {
+                flex-direction: column;
+                padding: 5px 0px;
+            }
+            .login {
+                margin-left: 0;
+            }
+            footer {
+                flex-direction: column;
+                padding: 5px 0px;
+            }
+            .owner {
+                font-size: 15px;
+            }
+            .owner_bio {
+                font-size: 10px;
+            }
+            .offer {
+                font-size: 15px;
+            }
+            .heading {
+                font-size: 20px;
+            }
+            .avatar {
+                width: 30%;
+                height: auto;
+                position: relative;
+                margin-left: 40%;
+            }
+            .searchbox {
+                margin-top: 0%;
+                margin-bottom: 10%;
+                border-radius: 20px;
+                height: 50px;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            section {
+                text-align: center;
+                height: 20%;
+                min-height: 20vh;
+                padding: 60px 0px;
+            }
+            .info_section {
+                box-shadow: cyan;
+                background-image: url(./giphy.gif);
+                height: auto;
+                width: auto;
+            }
+            .head {
+                color: white;
+                margin-top: 0%;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .img_responsive {
+                max-height: 100%;
+                width: 100%;
+            }
+        }
+        
+        section h2 span {
+            background-color: rgb(163, 163, 20);
+            padding: 13px 18px;
+            border-radius: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> NOTES BANK</h1>
+
+    </header>
+    <nav>
+        <a href="home.html">HOME</a>
+        <a href="NOTES.html">NOTES</a>
+        <a href="#">QUESTION PAPERS</a>
+        <a href="#">LAB MANUALS</a>
+        <a href="signup.html" class="login">LOGIN/SIGNUP</a>
+
+
+    </nav>
+    <br>
+
+    <main>
+        <section class="info_section">
+
+            <form target="_blank" method="get" class="search">
+                <img class="avatar" src="./undraw_profile_pic_ic5t.png" alt="img" srcset="">
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+                <h1 class="head">Welcome to , <strong>NOTES BANK</strong> </h1>
+
+
+
+                <input class="searchbox" type="text" name="search" id="search" placeholder="Search Anything...">
+                <input class="search_btn" type="button" value="Search">
+
+            </form>
+        </section>
+        <section>
+            <h2>
+                <span class="heading">COLLEGE NOTES</span>
+            </h2>
+            <br>
+            <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+                <a class="carousel-cell" target="_blank" href="https://drive.google.com/drive/folders/1DN8UULORvbo-sYrQmsNPA_9bPJhjKBoh?usp=sharing">
+                    <img src="cropped-Career-in-Animation.png" class="img_responsive">
+
+                </a>
+                <a class="carousel-cell"><img src="iStock-917599204-913253651-1585759627.jpg" class="img_responsive"> </a>
+                <a class="carousel-cell"><img src="istockphoto-695596712-612x612.jpg" class="img_responsive"> </a>
+            </div>
+        </section>
+        <section>
+            <h2><span class="heading"> QUESTION PAPERS</span>
+            </h2>
+            <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+                <a class="carousel-cell"><img src="./Electronic_circuit.jpg" alt="img" class="img_responsive"></a>
+                <a class="carousel-cell"><img src="./a010-markusspiske-feb19-msp_1902_5023.jpg" class="img_responsive"></a>
+                <a class="carousel-cell"><img src="./newimg.jpg" alt="img" class="img_responsive"></a>
+            </div>
+        </section>
+        <section>
+            <h2><span class="heading">WHAT WE OFFERS</span></h2>
+            <a><img src="find_notes.png" width="15%">
+                <h3 class="offer">NOTES</h3>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a><img src="qp.png" width="15%">
+                <h3 class="offer">QUESTION PAPERS</h3>
+            </a>
+        </section>
+        <section>
+
+            <h2><span class="heading"> CREATOR</span></h2>
+            <a><img src="https://www.dropbox.com/s/khok2cxnw0sj70x/WhatsApp%20Image%202021-04-09%20at%2010.11.21%20PM.jpeg?raw=1" class="creator" width="20%"></a>
+            <h3 class="owner">SAURAV KUMAR</h3>
+            <h4 class="owner_bio">B.E || INFORMATION SCIENCE & ENGINEERING</h4>
+
+        </section>
+
+    </main>
+    <footer>
+        <a href="#">HOME</a>
+        <a href="#">FAQ</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="#">PRIVACY & POLICY</a>
+        <a href="#">TERMS & CONDITIONS</a>
+        <a href="#">ABOUT US</a>
+        <a href="#" class="copyright">&COPY; 2021 | COLLEGE NOTES HUB</a>
+
+
+
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+
+</html>
